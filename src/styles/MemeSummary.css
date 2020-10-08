@@ -1,0 +1,7 @@
+.outline-class{
+    outline:1px solid orange;
+}
+
+img{
+    background: url('../image/image_not_there.png');
+}
