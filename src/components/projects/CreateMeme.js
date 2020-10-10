@@ -5,6 +5,8 @@ import firebase from '../../config/fbConfig'
 import '../../styles/MemeSummary.css'
 import Not_there from '../../image/image_not_there.jpg'
 
+
+
 class CreateMeme extends Component {
     state = {
         title: '',
@@ -23,9 +25,14 @@ class CreateMeme extends Component {
     }
 
     handleSubmit = (e) => {
+
         e.preventDefault();
         // console.log(this.state)
         this.props.createMeme(this.state);
+        this.props.history.push('/');
+
+
+
     }
 
     setPath = (e) => {
@@ -82,12 +89,12 @@ class CreateMeme extends Component {
         if (this.state.meme_path === '') {
 
             return (
-                <img src={Not_there} className="responsive-img" />
+                <img src={Not_there} alt="yooo" className="responsive-img" />
             )
         }
         else {
             return (
-                <img src={this.state.meme_path} className="responsive-img" />
+                <img src={this.state.meme_path} alt="yooo" className="responsive-img" />
             )
         }
     }
@@ -110,7 +117,10 @@ class CreateMeme extends Component {
                         </div>
 
                         <div className="input-field">
-                            <button className="btn pink lighten-1 z-depth-0">Just Post eet</button>
+
+                            <button className="btn pink lighten-1 z-depth-0" >Just Post eet</button>
+
+
                         </div>
                     </form>
                     <div className="col s12 m8 offset-m2 l6 offset-l3">

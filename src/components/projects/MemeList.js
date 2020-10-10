@@ -1,5 +1,7 @@
 import React from 'react'
 import MemeSummary from './MemeSummary'
+import { Link } from 'react-router-dom'
+
 
 const MemeList = ({ memes }) => {
 
@@ -8,7 +10,10 @@ const MemeList = ({ memes }) => {
         <div /*className="center-align"*/>
             {memes && memes.map(meme => {
                 return (
-                    <MemeSummary meme={meme} key={meme.id} />
+                    <Link to={'/project/' + meme.id} key={meme.id}>
+                        <MemeSummary meme={meme} />
+                    </Link>
+
                 )
             })}
 
