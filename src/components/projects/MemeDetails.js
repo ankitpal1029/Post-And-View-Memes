@@ -2,9 +2,11 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
+import { Redirect } from 'react-router-dom'
 
 function MemeDetails(props) {
-    const { meme } = props;
+    const { meme, auth } = props;
+    if (!auth.uid) return <Redirect to='/signIn' />
     if (meme) {
         return (
             <div className="container section project-details">
@@ -38,7 +40,8 @@ const mapStateToProps = (state, ownProps) => {
     const memes = state.firestore.data.memes;
     const meme = memes ? memes[id] : null;
     return {
-        meme: meme
+        meme: meme,
+        auth: state.firebase.auth
     }
 }
 

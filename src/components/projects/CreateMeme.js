@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import firebase from '../../config/fbConfig'
 import '../../styles/MemeSummary.css'
 import Not_there from '../../image/image_not_there.jpg'
+import { Redirect } from 'react-router-dom'
 
 
 
@@ -101,7 +102,8 @@ class CreateMeme extends Component {
 
     render() {
 
-
+        const { auth } = this.props;
+        if (!auth.uid) return <Redirect to='/signIn' />
         return (
             < div >
                 <div className="container">
@@ -148,11 +150,15 @@ class CreateMeme extends Component {
 
     }
 }
-
+const mapStateToProps = (state) => {
+    return {
+        auth: state.firebase.auth
+    }
+}
 const mapDispatchToProps = (dispatch) => {
     return {
         createMeme: (meme) => dispatch(createMeme(meme))
     }
 }
 
-export default connect(null, mapDispatchToProps)(CreateMeme);
+export default connect(mapStateToProps, mapDispatchToProps)(CreateMeme);

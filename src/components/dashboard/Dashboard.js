@@ -5,10 +5,12 @@ import { connect } from 'react-redux'
 import './../../styles/Test.css'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
+import { Redirect } from 'react-router-dom'
 
 class Dashboard extends Component {
     render() {
-        const { memes } = this.props;
+        const { memes, auth } = this.props;
+        if (!auth.uid) return <Redirect to='/signIn' />
         return (
             <div className="valign-wrapper ">
                 <div className="dashboard container ">
@@ -31,7 +33,8 @@ class Dashboard extends Component {
 const mapStateToProps = (state) => {
 
     return {
-        memes: state.firestore.ordered.memes
+        memes: state.firestore.ordered.memes,
+        auth: state.firebase.auth
     }
 }
 
