@@ -4,17 +4,14 @@ import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 
 function MemeDetails(props) {
-    const id = props.match.params.id
     const { meme } = props;
-    console.log(meme)
-    console.log(meme)
     if (meme) {
         return (
             <div className="container section project-details">
                 <div className="card z-depth-0">
                     <div className="card-content">
                         <span className="card-title">{meme.title}{meme.id}</span>
-                        <img src={meme.meme_path}></img>
+                        <img src={meme.meme_path} alt="NOT LOADED"></img>
                         <p>Need to add a description</p>
                     </div>
                     <div className="card-action grey lighten-4 grey-text">
