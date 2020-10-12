@@ -9,7 +9,7 @@ const SignedInLinks = (props) => {
         <ul className="right">
             <li><NavLink to='/creatememe'>Post Meme</NavLink></li>
             <li><a onClick={props.logOut}>Log Out</a></li>
-            <li><NavLink to='/' className='btn btn-floating pink lighten-1'>YB</NavLink></li>
+            <li><NavLink to='/' className='btn btn-floating pink lighten-1'>{props.profile.initials}</NavLink></li>
 
         </ul>
     )
@@ -20,5 +20,6 @@ const mapDispatchToProps = (dispatch) => {
         logOut: () => dispatch(logOut())
     }
 }
+
 
 export default connect(null, mapDispatchToProps)(SignedInLinks);
