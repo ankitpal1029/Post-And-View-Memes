@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import { Redirect } from 'react-router-dom'
-import DayJS from 'react-dayjs'
 import moment from 'moment'
 
 
