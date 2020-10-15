@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/MemeSummary.css'
+import moment from 'moment'
 
 const MemeSummary = ({ meme }) => {
     return (
@@ -8,7 +9,7 @@ const MemeSummary = ({ meme }) => {
                 <span className="card-title">{meme.title}</span>
                 <img src={meme.meme_path} alt="Meme Not Available" className="responsive-img" />
                 <p>Posted by {meme.authorFirstName} {meme.authorLastName}</p>
-                <p className="grey-text">3rd Sept ,2am</p>
+                <p className="grey-text">{moment(meme.createdAt.toDate()).calendar()}</p>
             </div>
         </div>
     )

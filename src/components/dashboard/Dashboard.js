@@ -31,7 +31,7 @@ class Dashboard extends Component {
 }
 
 const mapStateToProps = (state) => {
-
+    console.log(state)
     return {
         memes: state.firestore.ordered.memes,
         auth: state.firebase.auth
