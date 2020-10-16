@@ -7,10 +7,7 @@ const Notifications = () => {
                 <div className="card-content">
                     <div className="card-title">Notifications</div>
                     <ul>
-                        <li>Notifications</li>
-                        <li>Notifications</li>
-                        <li>Notifications</li>
-                        <li>Notifications</li>
+
                     </ul>
                 </div>
             </div>

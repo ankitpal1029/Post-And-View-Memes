@@ -19,7 +19,7 @@ class Dashboard extends Component {
                             <MemeList memes={memes} />
                         </div>
                         <div className="col s12 v5 offset-m1">
-                            <Notifications />
+
 
                         </div>
                     </div>
