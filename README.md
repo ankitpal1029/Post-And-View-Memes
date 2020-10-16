@@ -1,7 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Initial Build at meme Social Media
 
-using Firebase
+## Just a dumb WEB APP to post images in
 
-far from completed
+# check out it out on this link to add your memes in too(don't know why you would do that but go ahead)
+
+![Alt text](./site.png)
