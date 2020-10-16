@@ -9,3 +9,7 @@ https://just-meme-eet.netlify.app/
 ![Alt text](./site.png)
 
 
+made it using firebase and firestore 
+used react for the front-end 
+
+
