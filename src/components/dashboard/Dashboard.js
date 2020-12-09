@@ -12,8 +12,8 @@ class Dashboard extends Component {
         const { memes, auth } = this.props;
         if (!auth.uid) return <Redirect to='/signIn' />
         return (
-            <div className="outline-class">
-                <div className="bring-left align-wrapper bring-down">
+            <div>
+                <div className="align-wrapper bring-down">
                     <div className="dashboard container ">
                         <div className="row ">
                             <div className="col s12 offset-l3">

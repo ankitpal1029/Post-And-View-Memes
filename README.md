@@ -3,7 +3,7 @@
 # Post-And-View-Memes
 
 
-## check out it out on this link to add your memes in too
+## Check out it out on this link to add your memes in too
 
 https://just-meme-eet.netlify.app/
 
@@ -12,9 +12,9 @@ This is a web app that let's you post memes and view them
 
 ![Alt text](./READMEimages/dashboard.png)
 
-# Sign-in Page
+# Sign-up Page
 
-![Alt text](./READMEimages/site.png)
+![Alt text](./READMEimages/Signup.png)
 
 # Login Page
 
@@ -22,11 +22,11 @@ This is a web app that let's you post memes and view them
 
 # Dashboard
 
-![Alt text](./site.png)
+![Alt text](./READMEimages/mobileview.png)
 
 # Post Details
 
-![Alt text](./site.png)
+![Alt text](./READMEimages/postmeme.png)
 
 ## FrontEnd
 
@@ -35,7 +35,7 @@ This is a web app that let's you post memes and view them
 * Redux (for state management)
 * It's optimised for both desktop and mobile viewing
 
-# The FrontEnd code is organised as: 
+### The FrontEnd code is organised as: 
  
 * componenets (holds the jsx for different routes)
 * config (firebase config file)
@@ -51,7 +51,7 @@ This is a web app that let's you post memes and view them
 
 
 
-### Setting up dev environment
+# Setting up dev environment
 
 
 * make sure to have node --version 10 or above

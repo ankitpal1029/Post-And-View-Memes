@@ -1,4 +1,6 @@
-
+.outline-class{
+    outline:1px solid orange;
+}
 .bring-down{
     margin-top:20px;
 }
@@ -8,7 +10,7 @@
 }
 
 .card{
-    width:60%;
+    width:100%;
 }
 
 @media(min-width:600px){
