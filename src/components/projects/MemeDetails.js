@@ -12,17 +12,19 @@ function MemeDetails(props) {
     if (meme) {
         return (
             <div className="container section project-details">
-                <div className="card z-depth-0">
-                    <div className="card-content">
-                        <span className="card-title">{meme.title}{meme.id}</span>
-                        <img src={meme.meme_path} alt="NOT LOADED"></img>
-                        <p>Need to add a description</p>
-                    </div>
-                    <div className="card-action grey lighten-4 grey-text">
-                        <div>Posted By {meme.authorFirstName} {meme.authorLastName}</div>
-                        <div>
-                            {moment(meme.createdAt.toDate()).calendar()}
+                <div class="row">
+                    <div className="card z-depth-0 col s8 offset-s2">
+                        <div className="card-content center-align">
+                            <span className="card-title">{meme.title}{meme.id}</span>
+                            <img src={meme.meme_path} alt="NOT LOADED"></img>
+                            <p>Need to add a description</p>
+                        </div>
+                        <div className="card-action grey lighten-4 grey-text">
+                            <div>Posted By {meme.authorFirstName} {meme.authorLastName}</div>
+                            <div>
+                                {moment(meme.createdAt.toDate()).calendar()}
 
+                            </div>
                         </div>
                     </div>
                 </div>

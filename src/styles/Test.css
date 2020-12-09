@@ -1,3 +1,25 @@
-.outline-class{
-    outline:1px solid orange;
+
+.bring-down{
+    margin-top:20px;
+}
+
+.move-left{
+
+}
+
+.card{
+    width:60%;
+}
+
+@media(min-width:600px){
+    /*.bring-left{
+        margin-left: -30%;
+    }*/
+
+
+    .card{
+        width:60%;
+    }
+
+
 }
