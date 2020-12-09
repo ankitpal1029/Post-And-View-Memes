@@ -10,15 +10,15 @@ https://just-meme-eet.netlify.app/
 
 This is a web app that let's you post memes and view them
 
-![Alt text](./site.png)
+![Alt text](./READMEimages/dashboard.png)
 
 # Sign-in Page
 
-![Alt text](./site.png)
+![Alt text](./READMEimages/site.png)
 
 # Login Page
 
-![Alt text](./site.png)
+![Alt text](./READMEimages/signin.png)
 
 # Dashboard
 
