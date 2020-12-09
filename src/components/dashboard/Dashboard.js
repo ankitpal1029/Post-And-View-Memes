@@ -12,10 +12,11 @@ class Dashboard extends Component {
         const { memes, auth } = this.props;
         if (!auth.uid) return <Redirect to='/signIn' />
         return (
-            <div className="valign-wrapper ">
+            <div>
+            <div className="align-wrapper ">
                 <div className="dashboard container ">
                     <div className="row ">
-                        <div className="col s6 m6 offset-l3">
+                        <div className="col s12 offset-l3">
                             <MemeList memes={memes} />
                         </div>
                         <div className="col s12 v5 offset-m1">
@@ -24,6 +25,8 @@ class Dashboard extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
+
             </div>
 
         )
